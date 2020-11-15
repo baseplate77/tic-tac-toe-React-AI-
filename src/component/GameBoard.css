@@ -1,0 +1,23 @@
+.game-board {
+  background-color: lavenderblush;
+  cursor: pointer;
+  max-width: 500px;
+  min-width: 300px;
+  max-height: 500px;
+  min-height: 300px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+}
+
+.board {
+  background-color: blanchedalmond;
+  display: flex;
+  margin: 5px;
+  width: 90px;
+  height: 90px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+}
