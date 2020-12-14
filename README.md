@@ -1,6 +1,6 @@
 # Tic tac teo web app
  Implemented Min-Max Algorithm to find best move to Win .
- <a href="https://baseplate77.github.io/tic-tac-toe-React-AI-/">Click here< /a> to visit the game
+ <a href="https://baseplate77.github.io/tic-tac-toe-React-AI-/">Click here</a> to visit the game
 
 ## Available Scripts
 
