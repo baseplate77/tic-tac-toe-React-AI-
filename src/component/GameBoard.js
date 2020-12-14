@@ -1,6 +1,7 @@
 import React from "react";
 
 import { minimax, checkGameBoard, checkWinner } from "./minmax";
+import { ReactComponent as ResetLogo } from "../image/reset.svg";
 import "./GameBoard.css";
 window.human = "X";
 window.ai = "O";
@@ -101,12 +102,21 @@ class GameBoard extends React.Component {
   }
   render() {
     return (
-      <div>
-        <div className="game-board">{this.renderBoard()}</div>
+      <div className="game-board">
+        <div className="boards">{this.renderBoard()}</div>
+
         {this.state.winner && (
           <div>
-            <p>{this.state.winner}</p>
-            <button onClick={this.reset}>Reset</button>
+            <div className="winner">
+              {this.state.winner == window.human ? (
+                <p>You won 🔥🔥!!!</p>
+              ) : (
+                <p>Try again to beat me 🤗</p>
+              )}
+            </div>
+            <ResetLogo className="btn-reset" onClick={this.reset}>
+              Reset
+            </ResetLogo>
           </div>
         )}
         {/* <p>{thi}</p> */}
