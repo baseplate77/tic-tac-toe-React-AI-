@@ -108,7 +108,7 @@ class GameBoard extends React.Component {
         {this.state.winner && (
           <div>
             <div className="winner">
-              {this.state.winner == window.human ? (
+              {this.state.winner === window.human ? (
                 <p>You won 🔥🔥!!!</p>
               ) : (
                 <p>Try again to beat me 🤗</p>
